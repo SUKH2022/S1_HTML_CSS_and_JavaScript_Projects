@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Hut</title>
+    <meta name="description" content="Let's order Pizza">
+    <meta name="robots" content="noindex,nofollow">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="hero">
+        <nav>
+            <!-- home page of website -->
+            <img src="./images/logo.png" alt="Logo" class="logo">
+            <!-- ul>li is the short cut for ul and li tag. -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Pizza Form</a></li>
+            </ul>
+            <!-- icon for light and dark theme -->
+            <img src="./images/moon.png" alt="moon img" id="icon">
+        </nav>
+    
+        <div class="info">
+            <h1><span>Pizza</span> Hut</h1>
+            <p>Welcome to our pizza paradise, where every slice <br> is a delicious adventure!</p>
+        </div>
+        <div class="img-box">
+            <img src="./images/pexels-cats-coming-365459.jpg" alt="image" class="img">
+        </div>
+        </div>
+
+        <!-- Pizza form -->
+        <!-- div with about id shorthand is #about -->
+        <div id="about">
+        <!-- div with class name container shorthand is .container -->
+            <div class="containeer">
+            <!-- div with class name row shorthand is .row -->
+                <div class="row">
+                    <!-- column 1 -->
+                    <!-- div with class name about column 1 shorthand is .about-col-1 -->
+                    <div class="about-col-1">
+                        <!-- 3d animated image from spline -->
+                        <iframe src='https://my.spline.design/untitled-91457687e67472bd583a394ec65754b2/'></iframe>
+                    </div>
+                    <!-- column 2 -->
+                    <div class="about-col-2">
+                        <h2 class="sub-title">Lets Order Our Pizza</h2>
+                        <form>
+                            <!-- personal details -->
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            <br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <br><br>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <br><br>
+                            <!-- number of pizza -->
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1">
+                            <br><br>
+                            <!-- pizza preference -->
+                            <label for="pizza-type">Pizza Type:</label>
+                            <select id="pizza-type" name="pizza-type">
+                            <option value="margherita">Margherita</option>
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="hawaiian">Hawaiian</option>
+                            <option value="Italian Classic">Italian Classic</option>
+                            <option value="Smokey Maple Bacon">Smokey Maple Bacon</option>
+                            <option value="Chicken Caesar">Chicken Caesar</option>
+                            <option value="Greek pizza">Greek pizza</option>
+                            <option value="BBQ Chicken">BBQ Chicken</option>
+                            <option value="Meat Lover's">Meat Lover's</option>
+                            <option value="Veggie Lover's">Veggie Lover's</option>
+                            <option value="Canadian">Canadian</option>
+                            <option value="Supreme Lover's">Supreme Lover's</option>
+                            <option value="Triple Crown">Triple Crown</option>
+                            <option value="Cheese Lover's">Cheese Lover's</option>
+                            <option value="Super Supreme Lover's">Supreme Lover's</option>
+                            </select>
+                            <br><br>
+                            <label for="pizza-size">Pizza Size: </label>
+                            <select id="pizza-size" name="pizza-size">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            </select>
+                            <br><br>
+                            <label for="crust-type">Crust Type:</label>
+                            <select id="crust-type" name="crust-type">
+                            <option value="thin-crust">Thin Crust</option>
+                            <option value="thick-crust">Thick Crust</option>
+                            <option value="stuffed-crust">Stuffed Crust</option>
+                            </select>  
+                            <br><br>
+                            <label>Additional Toppings:</label>
+                            <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
+                            <label for="pepperoni">Pepperoni</label>
+                            <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
+                            <label for="mushrooms">Mushrooms</label>
+                            <input type="checkbox" id="onions" name="toppings[]" value="onions">
+                            <label for="onions">Onions</label>
+                            <input type="checkbox" id="olive" name="toppings[]" value="olives">
+                            <label for="olive">Olives</label>
+                            <input type="checkbox" id="sausage" name="toppings[]" value="sausage">
+                            <label for="sausage">Sausage</label>
+                            <input type="checkbox" id="Bacon" name="toppings[]" value="Bacon">
+                            <label for="Bacon">Bacon</label>
+                            <input type="checkbox" id="pepper" name="toppings[]" value="pepper">
+                            <label for="pepper">Pepper</label>
+                            <br><br>
+                            <label for="sauce-type">Sauce Type:</label>
+                            <select id="sauce-type" name="sauce-type">
+                            <option value="tomato-sauce">Tomato Sauce</option>
+                            <option value="bbq-sauce">BBQ Sauce</option>
+                            <option value="pesto-sauce">Pesto Sauce</option>
+                            </select> 
+                            <br><br>
+                            <label for="cheese-type">Cheese Type:</label>
+                            <select id="cheese-type" name="cheese-type">
+                            <option value="mozzarella">Mozzarella</option>
+                            <option value="cheddar">Cheddar</option>
+                            <option value="parmesan">Parmesan</option>
+                            </select>
+                            <br><br>
+                            <label>Additional side dishes and beverages:</label>
+                            <input type="checkbox" id="fries" name="toppings[]" value="French fries">
+                            <label for="fries">French Fries</label>
+                            <input type="checkbox" id="Coke" name="toppings[]" value="Coke">
+                            <label for="Coke">Coke</label>
+                            <input type="checkbox" id="Garlic-sauce" name="toppings[]" value="Garlic sauce">
+                            <label for="Garlic-sauce">Garlic sauce</label>
+                            <input type="checkbox" id="Coco-Lava-Cake" name="toppings[]" value="Coco Lava Cake">
+                            <label for="Coco-Lava-Cake">Coco Lava Cake</label>
+                            <input type="checkbox" id="Wings-Bucket" name="toppings[]" value="Wings Bucket">
+                            <label for="Wings-Bucket">Wings Bucket</label>
+                            <input type="checkbox" id="Grilled-Momos" name="toppings[]" value="Grilled Momos">
+                            <label for="Grilled-Momos">Grilled Momos</label>
+                            <input type="checkbox" id="Sprite" name="toppings[]" value="Sprite">
+                            <label for="Sprite">Sprite</label><br>
+                            <input type="checkbox" id="Coffee" name="toppings[]" value="Coffee">
+                            <label for="Coffee">Coffee</label>
+                            <br><br>
+                            <label for="special-instructions">Special Instructions:</label>
+                            <textarea id="special-instructions" name="special-instructions"></textarea> 
+                            <br><br> 
+                            <label for="delivery">Delivery:</label>
+                            <input type="radio" id="delivery" name="delivery" value="yes">
+                            <label for="delivery">Yes</label>
+                            <input type="radio" id="pickup" name="delivery" value="no">
+                            <label for="pickup">No</label>
+                            <br><br>
+                            <label for="delivery-address">Delivery Address:</label>
+                            <input type="text" id="delivery-address" name="delivery-address"> 
+                            <br><br>
+                            <label for="delivery-instructions">Delivery Instructions:</label>
+                            <textarea id="delivery-instructions" name="delivery-instructions"></textarea> 
+                            <br><br>
+                            <!-- payment method -->
+                            <label for="payment-method">Payment Method:</label>
+                            <select id="payment-method" name="payment-method">
+                            <option value="cash">Cash</option>
+                            <option value="credit-card">Debit/Credit Card</option>
+                            <option value="paypal">E-interact</option>
+                            </select>  
+                            <br><br> 
+                            <!-- total pizza -->
+                            <label for="price">Price:</label>
+                            <input type="number" id="price" name="price" value="9.99">
+                            <label for="total-price">Total Price:</label>
+                            <input type="text" id="total-price" name="total-price">
+                            <br><br>
+                            <!-- button to submit -->
+                            <input type="submit" value="Place Order">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        //javascipt for dark and light mode
+        var icon=document.getElementById("icon");
+
+        //still in dark mode after refreshing it
+        if(localStorage.getItem("theme")=="null"){
+            localStorage.setItem("theme","light");
+        }
+        let localData = localStorage.getItem("theme");
+        if(localData== "light"){
+            icon.src="./images/moon.png";
+            document.body.classList.remove("dark-theme");
+        }
+        else if(localData="light"){
+            icon.src="./images/bsun.png";
+            document.body.classList.add("dark-theme");
+        }
+
+        icon.onclick=function(){
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")){
+                icon.src="./images/bsun.png";
+                localStorage.setItem("theme","dark");
+            } else{
+                icon.src="./images/moon.png";
+                localStorage.setItem("theme","light");
+            }
+        }
+
+        //javascript for total price
+        const quantityInput = document.getElementById("quantity");
+        const priceInput = document.getElementById("price");
+        const totalPriceInput = document.getElementById("total-price");
+      
+        function calculateTotalPrice() {
+          const quantity = quantityInput.valueAsNumber;
+          const price = priceInput.valueAsNumber;
+          const totalPrice = quantity * price;
+          
+          totalPriceInput.value = totalPrice.toFixed(2);
+        }
+      
+        quantityInput.addEventListener("input", calculateTotalPrice);
+        priceInput.addEventListener("input", calculateTotalPrice);    
+    </script>
+</body>
+</html>
