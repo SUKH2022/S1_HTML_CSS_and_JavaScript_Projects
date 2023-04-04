@@ -1,0 +1,165 @@
+/* CSS of the movie poster*/
+body {
+    margin: 0;
+    padding: 0;
+    /* background color  */
+    background-color: #c3c6d3;
+}
+/* poster css */
+.card {
+    position: absolute;
+    margin: auto;
+    margin-top: 0px;
+    padding: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 450px;
+    background: #0e0e0e;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card .poster {
+    position: relative;
+    overflow: hidden;
+}
+
+.card .poster::before {
+    position: absolute;
+    bottom: -185.5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.card .poster img {
+    width: 100%;
+}
+
+/* details of the movie  */
+.details {
+    position: absolute;
+    margin-top: auto;
+    padding: 20px;
+    width: 100%;
+    height: 78%;
+    bottom: -185.5px;
+    /* margin-bottom: -185.5px; */
+    left: 0;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+}
+
+.details h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+}
+
+.details h1 a {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px 62px;
+    font-size: 54px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-decoration: none;
+    /* make the text color in two  */
+    background: linear-gradient(#eaec6c, #db230b);
+    /* it will make the text color in gradient not the background */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.details h1 span {
+    position: absolute;
+    padding: 0px 68px 0px 70px;
+    top: 72px;
+    left: 8px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(224, 212, 49);
+    letter-spacing: 1px;
+}
+
+/* star names */
+#fst {
+    list-style-type: none;
+    margin: -40px;
+    padding: 0;
+    color: rgb(224, 212, 49);
+}
+
+.one {
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+span {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+/* intro paragraph */
+p {
+    margin-top: 105px;
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 6px;
+    color: #998e8e;
+}
+/* release date of the movie */
+.first {
+    list-style-type: none;
+    margin: -6px;
+    padding: 0;
+    color: rgb(240, 239, 224);
+}
+
+.sm {
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+#l-date {
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+/* some more info */
+.sec {
+    margin-top: 461px;
+    left: 545px;
+    text-align: center;
+    color: rgb(240, 239, 224);
+}
+
+.large {
+    font-size: 5px;
+}
+
+/* footer in the movie poster */
+.lower {
+    margin: 0px;
+    font-size: 4px;
+    margin-left: -20px;
+    color: rgb(209, 209, 203);
+}
