@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pager Website</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="Final project of HTML, CSS and JS">
+    <!-- add jQuery Library then JS  -->
+    <!-- jQuery link must be placed before the link to our custom js ...https://releases.jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <!-- icons cdn link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- css file link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="./images/home1/logo1.png" alt="world logo" class="logo"></a>
+        <div>
+            <ul id="nav-bar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="tab">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="hero">
+        <h1>Pager Beeper....!!</h1>
+        <h2>Don't let important messages <br> go unnoticed-</h2>
+        <h3>choose our pager buzzers to make your life easy</h3>
+        <p>Save more upto 60% off!! Hurry up limited offers available</p>
+        <button>Shop now</button>
+    </section>
+    <section id="feature" class="section-p1">
+        <h3>Services provide by the company</h3>
+        <div class="f1-box">
+            <img src="images/services/f1.png" alt="free shipping image">
+            <h6>Free Door-Step delivery</h6>
+        </div>
+        <div class="f1-box">
+            <img src="images/services/f2.png" alt="free shipping image">
+            <h6>Online Order</h6>
+        </div>
+        <div class="f1-box">
+            <img src="images/services/f3.png" alt="free shipping image">
+            <h6>Save Money</h6>
+        </div>
+        <div class="f1-box">
+            <img src="images/services/f4.png" alt="free shipping image">
+            <h6>Happy to Provide service</h6>
+        </div>
+        <div class="f1-box">
+            <img src="images/services/f5.png" alt="free shipping image">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+    <section id="p1" class="section-p1">
+        <h2>New Collection</h2>
+        <p>Paging made easy with our high-quality devices</p>
+        <div class="p2-container">
+            <div class="p2">
+                <img src="images/home1/t1.webp" alt="t1">
+                <div class="desc">
+                    <span>world</span>
+                    <h5>Plain Beepers</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$32</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="p2">
+                <img src="images/home1/t2.jpg" alt="t1">
+                <div class="desc">
+                    <span>world</span>
+                    <h5>Voice Paging</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$48</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="p2">
+                <img src="images/home1/t3.png" alt="t1">
+                <div class="desc">
+                    <span>world</span>
+                    <h5>Numeric Pagers</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$59</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer id="footer"  class="section-p1">
+        <div class="col">
+            <img src="images/home1/logo1.png" alt="logo" class="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 4 Larkin Drive, Barrie, ON</p>
+            <p><strong>Email Id: </strong> world.telecommunication1976@gmail.com</p>
+            <p><strong>Phone: </strong> +16476854687</p>
+            <p><strong>Opening Hours: </strong> 8:00 - 20:00, Mon to Sun</p>
+        </div>
+        <div class="col1">
+            <h4>Info About:-</h4>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+        </div>
+        <div class="col2">
+            <h4>About us</h4>
+            <a href="#">Headquarters</a>
+            <a href="#">Service Center</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col3">
+            <div class="follow">
+                <h4>Follow us on</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+            <h4>Secured Payment Gateways</h4>
+            <img src="images/home1/pay.png" alt="payment method">
+        </div>
+        <div class="copyright">
+            <p>© Copyrigth Sukhpreet Saini</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+// Javascript on the index page of the Media Devices for navbar
+const bar=document.getElementById('bar');
+const close=document.getElementById('close');
+const nav=document.getElementById('nav-bar');
+
+if(bar){
+    bar.addEventListener('click',()=>{
+        nav.classList.add('active');
+    })
+}
+if(close){
+    close.addEventListener('click',()=>{
+        nav.classList.remove('active');
+    })
+}
+
+-------------------------------------------------------------------------------------------------
+// The first thing that we are going to do is check to make sure that all the HTML is loaded.
+// We do this to avoid any render blocking JavaScript.
+document.addEventListener('DOMContentLoaded', (loaded) =>{
+    // This will only be able to be seen in the console log. To check this inspect element
+    // in the browser and select the console tab.
+    console.log('Document is ready!!!');
+});
+
+// now let's try some jQuery!
+// Let's start with the jQuery version of waiting until the document has loaded.
+$(document).ready(function(){
+    // let's start by calling in our header.html, meta.html, & our footer.html
+    $(function(){
+       $("#head").load("./assests/meta.html");
+       $("#header").load("./assests/header.html");
+       $("#footer").load("./assests/footer.html");
+       // Javascript on the index page of the Media Devices for navbar
+const bar=document.getElementById("#bar");
+const close=document.getElementById("#close");
+const nav=document.getElementById("#nav-bar");
+
+if(bar){
+    bar.addEventListener('click',()=>{
+        nav.classList.add('active');
+    })
+}
+if(close){
+    close.addEventListener('click',()=>{
+        nav.classList.remove('active');
+    })
+}
+    });
+});
