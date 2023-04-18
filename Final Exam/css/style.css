@@ -1,0 +1,204 @@
+/* *{}-a universal selector that sets styles for all elements on the page. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* scroll smoothly */
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+p,
+a,
+li {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 50px;
+    /* line height- sets the height of a line box, it is commonly used to set the distance b/w the lines of text. */
+    line-height: 64px;
+    color: rgb(255, 255, 255);
+}
+h2 {
+    font-size: 36px;
+    /* the distance from the top of the first line of text to the top of the second. */
+    line-height: 54px;
+    color: rgb(255, 255, 255);
+}
+p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 15px 0 20px 0;
+}
+
+body {
+    width: 100%;
+}
+#header {
+    display: flex;
+    align-items: center;
+    /* space-between- items are evenly distributed in the line */
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #125784;
+    z-index: 999;
+    position: sticky;
+    /* stay at the same place */
+    top: 0;
+    left: 0;
+}
+.logo {
+    width: 80px;
+}
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-bar li {
+    /* sets the marker (such as a disc, character, or custom counter style) of a list item element. */
+    list-style: none;
+    padding: 0 20px;
+    color: #fefefe;
+}
+#nav-bar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.nav-rt{
+    display: flex;
+    align-items: center;
+}
+.search_box{
+    background: #efefef;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search_box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* main page- hero */
+#hero {
+    background-image: url(../resources/img1.jpg);
+    height: 80vh;
+    background-size: cover;
+}
+#hero div{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title1{
+    padding-left: 2%;
+    background-color:  #f57f17;
+    display: flex;
+}
+.title1 h2{
+    padding-top: 20px;
+}
+.img2{
+    width: 150px;
+    height: 200px;
+}
+.img2 img{
+    width: 99.9%;
+    height: 100%;
+}
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+footer .col1 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .logo {
+    margin: 30px;
+}
+
+footer h3{
+    padding-top: 10px;
+    font-size: 32px;
+    padding-bottom: 20px;
+    color: #fefefe;
+}
+#form{
+    color: #fefefe;
+    padding: 10px;
+    background-color:  #5e35b1;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 20%;
+}
+.name{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.space{
+    width: 300px;
+    margin-bottom: 10px;
+}
+.top{
+    margin-top: 10px;
+}
+.normal{
+    width: 300px;
+    height: 30px;
+}
+.pictures{
+    display: flex;
+    margin: 0;
+}
+.pictures img{
+    height: 300px;
+    width: 446.5px;
+}
+/* media query */
+@media screen and (min-width:1440px) {
+
+}
+@media screen and (max-width: 545px) {
+    .search_box{
+        display: none;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
